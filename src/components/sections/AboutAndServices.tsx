@@ -1,0 +1,227 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
+import { STATS, SERVICES } from '@/data/mockData';
+import { ArrowRight, CheckCircle, Clock, Shield, Award, Users, Phone } from 'lucide-react';
+
+export function AboutSection() {
+  return (
+    <section className="py-20 lg:py-28 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Column: Image with floating badge */}
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative"
+          >
+            <div className="aspect-[4/3] rounded-[1px] overflow-hidden shadow-2xl shadow-black/10 border border-gray-100">
+              <img 
+                src="https://images.unsplash.com/photo-1621516087786-21820a40eef9?auto=format&fit=crop&q=80" 
+                alt="Santa Towing & Garage Workshop" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Floating 24/7 Emergency Assistance Badge */}
+            <div className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-8 bg-primary text-white p-6 sm:p-7 rounded-[1px] shadow-2xl max-w-xs border border-white/10">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-10 h-10 rounded-[1px] bg-accent flex items-center justify-center font-extrabold text-white text-lg shrink-0">
+                  24/7
+                </div>
+                <div>
+                  <div className="font-bold text-base leading-tight">Emergency Towing</div>
+                  <div className="text-xs text-white/80">Rapid Dispatch Team</div>
+                </div>
+              </div>
+              <p className="text-white/80 text-xs sm:text-sm mt-2 leading-relaxed">
+                Nationwide roadside assistance with guaranteed fast arrival.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Right Column: About Content */}
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="inline-block px-3.5 py-1.5 bg-accent/10 text-accent font-bold rounded-[1px] text-xs uppercase tracking-wider mb-4 border border-accent/20">
+              About Santa Towing &amp; Garage
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark mb-5 tracking-tight leading-[1.15]">
+              Leading Towing &amp; Premium Automotive Care
+            </h2>
+            <p className="text-slate-600 mb-6 text-base sm:text-lg leading-relaxed">
+              With over 15 years of industry excellence, Santa Towing &amp; Garage Services is your premier partner for 24/7 emergency towing, heavy vehicle recovery, certified mechanical repairs, and premium car rentals.
+            </p>
+            
+            {/* Feature Checklist */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+              {[
+                '24/7 Live Emergency Dispatch',
+                'Certified Master Mechanics',
+                'Genuine OEM Auto Parts',
+                'Nationwide Rapid Coverage',
+                'Transparent Upfront Pricing',
+                'Modern Flatbed Fleet'
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-center gap-2.5 font-semibold text-dark text-sm sm:text-base">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-accent shrink-0" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* 2x2 Stats Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
+              {STATS.map((stat, idx) => (
+                <div key={idx} className="bg-slate-50 p-4 rounded-[1px] border border-gray-100 shadow-sm">
+                  <div className="text-2xl sm:text-3xl font-extrabold text-primary mb-0.5 tracking-tight">
+                    {stat.value}{stat.suffix}
+                  </div>
+                  <div className="text-xs text-gray-500 font-medium leading-tight">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <Link 
+                to="/services" 
+                className="bg-primary hover:bg-secondary text-white px-7 py-3.5 rounded-[1px] font-bold transition-all duration-200 flex items-center gap-2 shadow-md hover:-translate-y-0.5"
+              >
+                <span>Discover Our Services</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              <a 
+                href="tel:0244753849" 
+                className="bg-accent hover:bg-accent/90 text-white px-7 py-3.5 rounded-[1px] font-bold transition-all duration-200 shadow-md shadow-accent/25 hover:-translate-y-0.5"
+              >
+                Call Hotline: 0244753849
+              </a>
+            </div>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function ServicesSection() {
+  return (
+    <section className="py-20 lg:py-28 bg-slate-50/70 relative border-y border-gray-200/60">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-block px-3.5 py-1.5 bg-accent/10 text-accent font-bold rounded-[1px] text-xs uppercase tracking-wider mb-4 border border-accent/20">
+            Our Specialized Services
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark mb-4 tracking-tight">
+            Complete Towing &amp; Automotive Solutions
+          </h2>
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+            From emergency towing to scheduled maintenance, our specialized team delivers reliable, high-standard automotive support across Ghana.
+          </p>
+        </div>
+
+        {/* 3-Column Service Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {SERVICES.map((service, idx) => {
+            const Icon = service.icon;
+            const linkHref = service.title === 'Emergency Towing' ? '/towing' 
+              : service.title === 'Vehicle Recovery' ? '/towing'
+              : service.title === 'Car Rental' ? '/rental' 
+              : service.title === 'Vehicle Sales' ? '/sales' 
+              : service.title === 'Auto Repairs' ? '/repairs' 
+              : service.title === 'Auto Body Works' ? '/body-works' 
+              : service.title === 'Spray Painting' ? '/body-works' 
+              : service.title === 'Car Batteries' ? '/parts' 
+              : service.title === 'Genuine Auto Parts' ? '/parts' 
+              : service.title === 'Fleet Services' ? '/fleet' 
+              : '/services';
+
+            return (
+              <motion.div
+                key={service.id}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: (idx % 3) * 0.08, duration: 0.45 }}
+                className="group bg-white rounded-[1px] overflow-hidden shadow-sm hover:shadow-xl border border-gray-200/80 hover:border-accent/30 transition-all duration-300 flex flex-col h-full hover:-translate-y-1.5"
+              >
+                {/* Card Image */}
+                <div className="aspect-[16/10] overflow-hidden relative bg-gray-100">
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                
+                {/* Card Body */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col relative">
+                  {/* Floating Circular Icon Badge Overlapping Image */}
+                  <div className="absolute -top-7 right-6 w-14 h-14 bg-primary text-white rounded-[1px] flex items-center justify-center shadow-lg group-hover:bg-accent group-hover:shadow-accent/30 transition-all duration-300 border-2 border-white">
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-dark mb-2.5 mt-1 group-hover:text-accent transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm sm:text-base mb-6 flex-1 leading-relaxed">
+                    {service.desc}
+                  </p>
+                  
+                  <div className="mt-auto pt-4 border-t border-gray-100 space-y-3">
+                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                      <Link 
+                        to={linkHref} 
+                        className="flex-1 bg-primary hover:bg-black text-white text-center py-2.5 px-3 rounded-[1px] text-xs sm:text-sm font-bold transition-all shadow-sm flex items-center justify-center gap-1 min-h-[40px]"
+                      >
+                        <span>Book for Repair</span>
+                      </Link>
+                      <a 
+                        href="tel:0244753849" 
+                        className="flex-1 bg-accent hover:bg-accent/90 text-white text-center py-2.5 px-3 rounded-[1px] text-xs sm:text-sm font-bold transition-all shadow-sm shadow-accent/20 flex items-center justify-center gap-1.5 min-h-[40px]"
+                      >
+                        <Phone className="w-3.5 h-3.5" />
+                        <span>Call for Repair</span>
+                      </a>
+                    </div>
+
+                    <Link 
+                      to={linkHref} 
+                      className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-accent transition-colors group/link"
+                    >
+                      <span>Service Details</span> 
+                      <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+        
+        {/* Bottom CTA */}
+        <div className="mt-14 text-center">
+          <Link 
+            to="/services" 
+            className="bg-accent hover:bg-accent/90 text-white px-8 sm:px-10 py-4 rounded-[1px] font-bold transition-all shadow-md shadow-accent/25 hover:shadow-accent/40 hover:-translate-y-0.5 inline-flex items-center gap-2"
+          >
+            <span>View All Automotive Services</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+      </div>
+    </section>
+  );
+}

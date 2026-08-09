@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #015557;
+  --color-secondary: #192e2e;
+  --color-accent: #d80000;
+  --color-dark: #131514;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --radius: 1px;
+  --radius-xs: 1px;
+  --radius-sm: 1px;
+  --radius-md: 1px;
+  --radius-lg: 1px;
+  --radius-xl: 1px;
+  --radius-2xl: 1px;
+  --radius-3xl: 1px;
+  --radius-4xl: 1px;
+  --radius-full: 1px;
+}
+
+/* Comprehensive 1px border-radius enforcement across the entire website */
+*,
+*::before,
+*::after {
+  border-radius: 1px !important;
+}
+
+html, body {
+  @apply overflow-x-hidden w-full m-0 p-0;
+}
+
+body {
+  @apply bg-white text-dark font-sans antialiased;
+}
+
+/* Ensure all interactive, container, image, and form components maintain 1px border radius */
+button,
+input,
+select,
+textarea,
+img,
+svg,
+a,
+div,
+span,
+label,
+dialog,
+details,
+summary,
+form,
+table,
+th,
+td,
+nav,
+header,
+footer,
+section,
+article,
+aside,
+main {
+  border-radius: 1px !important;
+}
+
