@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Truck, Shield, Car, Wrench, Settings, Battery, ArrowRight, Clock, ShieldCheck, Tag, MapPin, Zap, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Testimonials, FAQ } from '@/components/sections/BottomSections';
+import { FAQ } from '@/components/sections/BottomSections';
 
 const CORE_SERVICES = [
   { 
@@ -273,9 +273,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* 7. Customer Testimonials */}
-      <Testimonials />
 
       {/* 8. FAQs Preview */}
       <FAQ />

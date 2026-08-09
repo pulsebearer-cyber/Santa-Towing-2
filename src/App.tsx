@@ -25,7 +25,6 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Faqs from './pages/Faqs';
-import Testimonials from './pages/Testimonials';
 import Gallery from './pages/Gallery';
 import Booking from './pages/Booking';
 import Careers from './pages/Careers';
@@ -56,7 +55,6 @@ export default function App() {
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faqs" element={<Faqs />} />
-            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/careers" element={<Careers />} />

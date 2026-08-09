@@ -94,7 +94,6 @@ export default function NavBar() {
 
           <Link to="/sales" className="hover:text-accent transition-colors">Cars for Sale</Link>
           <Link to="/rental" className="hover:text-accent transition-colors">Rental Fleet</Link>
-          <Link to="/testimonials" className="hover:text-accent transition-colors">Testimonials</Link>
           <Link to="/gallery" className="hover:text-accent transition-colors">Gallery</Link>
           <Link to="/blog" className="hover:text-accent transition-colors">Blog</Link>
           <Link to="/contact" className="hover:text-accent transition-colors">Contact</Link>
@@ -136,7 +135,6 @@ export default function NavBar() {
               Company <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
             </span>
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 bg-white text-dark rounded-[1px] shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden border border-gray-100 p-1.5 z-50">
-              <Link to="/testimonials" className="block px-3.5 py-2.5 hover:bg-slate-50 hover:text-accent rounded-[1px] transition-colors text-sm font-medium">Testimonials</Link>
               <Link to="/gallery" className="block px-3.5 py-2.5 hover:bg-slate-50 hover:text-accent rounded-[1px] transition-colors text-sm font-medium">Gallery</Link>
               <Link to="/blog" className="block px-3.5 py-2.5 hover:bg-slate-50 hover:text-accent rounded-[1px] transition-colors text-sm font-medium">Blog</Link>
               <Link to="/sitemap" className="block px-3.5 py-2.5 hover:bg-slate-50 hover:text-accent rounded-[1px] transition-colors text-sm font-medium">Sitemap</Link>
@@ -246,7 +244,6 @@ export default function NavBar() {
                       exit={{ height: 0, opacity: 0 }}
                       className="overflow-hidden flex flex-col bg-slate-50 rounded-[1px] my-1 py-1"
                     >
-                      <Link to="/testimonials" className="py-2.5 px-6 hover:text-accent text-sm font-medium">Testimonials</Link>
                       <Link to="/gallery" className="py-2.5 px-6 hover:text-accent text-sm font-medium">Gallery</Link>
                       <Link to="/blog" className="py-2.5 px-6 hover:text-accent text-sm font-medium">Blog</Link>
                       <Link to="/sitemap" className="py-2.5 px-6 hover:text-accent text-sm font-medium">Sitemap</Link>

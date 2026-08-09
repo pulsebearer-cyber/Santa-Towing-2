@@ -277,48 +277,7 @@ export default function Towing() {
         </div>
       </section>
 
-      {/* 8. Customer Testimonials (Towing Specific) */}
-      <section className="py-24 bg-white text-center">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="inline-block px-4 py-1.5 bg-accent/10 text-accent font-semibold rounded-[1px] text-sm mb-4">
-            Real Reviews
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-16">
-            Saved by Santa Towing
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { text: "My tire blew out on the highway at night. Santa Towing was there in 20 minutes. The driver was so reassuring and professional. Got me home safely.", author: "Sarah M.", role: "Night Commuter" },
-              { text: "We had a minor fender bender and needed a flatbed. They handled my SUV with extreme care. Transparent pricing, no hidden costs.", author: "David K.", role: "Family Driver" },
-              { text: "The fastest response time I've ever experienced. Their GPS tracking link let me see exactly when the tow truck was arriving. Incredible service.", author: "Michael T.", role: "Business Traveler" },
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-[1px] shadow-sm text-left relative border border-dark/10"
-              >
-                <div className="flex gap-1 mb-6">
-                  {[1, 2, 3, 4, 5].map(star => <Star key={star} className="w-5 h-5 fill-accent text-accent" />)}
-                </div>
-                <p className="text-dark/70 mb-8 italic">"{item.text}"</p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white rounded-[1px] overflow-hidden">
-                    <img src={`https://i.pravatar.cc/150?img=${idx * 15 + 10}`} alt="User" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-dark">{item.author}</h4>
-                    <p className="text-sm text-dark/70">{item.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 9. Related Services */}
       <section className="py-20 bg-primary text-white">

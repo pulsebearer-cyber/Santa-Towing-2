@@ -105,21 +105,6 @@ const JOBS = [
   },
 ];
 
-const TESTIMONIALS = [
-  {
-    quote: "Working here has completely transformed my career. The company invested in my training, and within three years, I went from a junior mechanic to a lead diagnostic technician.",
-    name: "Samuel Osei",
-    role: "Lead Technician",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
-  },
-  {
-    quote: "The team culture is unmatched. Even during the busiest shifts, everyone supports each other. It really feels like a family that is passionate about cars and helping people.",
-    name: "Grace Addo",
-    role: "Customer Success Manager",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-  }
-];
-
 const PROCESS_STEPS = [
   { title: 'Submit Application', desc: 'Apply online with your updated resume and cover letter.' },
   { title: 'Initial Screening', desc: 'Our HR team reviews applications and schedules a brief phone call.' },
@@ -527,32 +512,7 @@ export default function Careers() {
         </div>
       </section>
 
-      {/* 6. Employee Testimonials */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Hear From Our Team</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {TESTIMONIALS.map((t, idx) => (
-              <div key={idx} className="bg-white rounded-[1px] p-8 md:p-10 border border-dark/10 relative">
-                <div className="text-primary text-6xl font-serif absolute top-6 left-6 opacity-20">"</div>
-                <p className="text-dark/80 text-lg leading-relaxed relative z-10 italic mb-8">
-                  "{t.quote}"
-                </p>
-                <div className="flex items-center gap-4">
-                  <img src={t.image} alt={t.name} className="w-16 h-16 rounded-[1px] object-cover border-2 border-white shadow-md" />
-                  <div>
-                    <h4 className="font-bold text-dark">{t.name}</h4>
-                    <span className="text-primary text-sm font-bold">{t.role}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 7. Our Hiring Process */}
       <section className="py-20 bg-white border-y border-dark/20">

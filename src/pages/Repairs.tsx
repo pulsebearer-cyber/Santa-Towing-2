@@ -329,45 +329,7 @@ export default function Repairs() {
         </div>
       </section>
 
-      {/* 8. Customer Testimonials */}
-      <section className="py-24 bg-white text-center">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-16">
-            Trusted by Drivers
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { text: "My engine warning light came on during a trip. The diagnostics were fast, the pricing was transparent, and they had me back on the road the next day.", author: "Samuel K.", role: "Toyota Owner" },
-              { text: "I've been bringing my cars here for preventive maintenance for years. The team is professional, honest, and the workshop is incredibly clean.", author: "Linda O.", role: "Honda Owner" },
-              { text: "Best transmission repair shop in the city. They explained exactly what was wrong and showed me the damaged parts. Highly recommended.", author: "Kwame A.", role: "Mercedes Owner" },
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-[1px] shadow-sm text-left relative"
-              >
-                <div className="flex gap-1 mb-6">
-                  {[1, 2, 3, 4, 5].map(star => <Star key={star} className="w-5 h-5 fill-accent text-accent" />)}
-                </div>
-                <p className="text-dark/70 mb-8 italic">"{item.text}"</p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white rounded-[1px] overflow-hidden">
-                    <img src={`https://i.pravatar.cc/150?img=${idx * 5 + 11}`} alt="User" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-dark">{item.author}</h4>
-                    <p className="text-sm text-dark/70">{item.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 9. FAQs */}
       <section className="py-24 bg-white">

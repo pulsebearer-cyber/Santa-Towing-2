@@ -3,7 +3,7 @@ import { HeroSlider, QuickActions } from '@/components/sections/HeroAndActions';
 import { AboutSection, ServicesSection } from '@/components/sections/AboutAndServices';
 import { FeaturedVehicles, RentalFleet } from '@/components/sections/VehiclesAndRentals';
 import { AutoParts, WhyChooseUs } from '@/components/sections/PartsAndWhyUs';
-import { TowingAppPromo, Testimonials, FAQ, Partners, ContactSection, BlogSection } from '@/components/sections/BottomSections';
+import { TowingAppPromo, FAQ, Partners, ContactSection, BlogSection } from '@/components/sections/BottomSections';
 
 export default function Home() {
   return (
@@ -17,7 +17,6 @@ export default function Home() {
       <RentalFleet />
       <AutoParts />
       <WhyChooseUs />
-      <Testimonials />
       <BlogSection />
       <FAQ />
       <Partners />

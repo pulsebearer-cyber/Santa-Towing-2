@@ -308,45 +308,7 @@ export default function Parts() {
         </div>
       </section>
 
-      {/* 7. Customer Testimonials */}
-      <section className="py-24 bg-white text-center">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-dark mb-16">
-            What Our Customers Say
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { text: "Finding genuine parts for my older Mercedes used to be a nightmare. Santa Towing not only had the exact brake pads I needed in stock but offered them at a highly competitive price.", author: "Kwame A.", role: "Retail Customer" },
-              { text: "We manage a fleet of 20 delivery vehicles. Sourcing our oil, filters, and batteries from Santa Towing with their fleet discount has significantly reduced our maintenance costs.", author: "Sarah O.", role: "Fleet Manager" },
-              { text: "I bought a new battery online and used their in-store pickup. The staff was incredibly helpful and even installed it for me on the spot. Fantastic service!", author: "Michael T.", role: "Retail Customer" },
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-8 rounded-[1px] shadow-sm text-left relative"
-              >
-                <div className="flex gap-1 mb-6">
-                  {[1, 2, 3, 4, 5].map(star => <Star key={star} className="w-5 h-5 fill-accent text-accent" />)}
-                </div>
-                <p className="text-dark/70 mb-8 italic">"{item.text}"</p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white rounded-[1px] overflow-hidden shrink-0">
-                    <img src={`https://i.pravatar.cc/150?img=${idx * 7 + 10}`} alt="User" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-dark">{item.author}</h4>
-                    <p className="text-sm text-dark/70">{item.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 8. FAQs */}
       <section className="py-24 bg-white">

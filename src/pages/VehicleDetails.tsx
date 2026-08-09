@@ -6,7 +6,7 @@ import {
   Heart, Share2, Phone, MessageCircle, ArrowRight, ChevronDown, Star, Car, Calculator 
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Testimonials, FAQ } from '@/components/sections/BottomSections';
+import { FAQ } from '@/components/sections/BottomSections';
 
 const VEHICLE_SPECS = {
   engine: [
@@ -461,9 +461,6 @@ export default function VehicleDetails() {
           </div>
         </div>
       </section>
-
-      {/* 9. Customer Reviews */}
-      <Testimonials />
 
       {/* 11. Call-to-Action Banner */}
       <section className="py-24 bg-primary text-white text-center relative overflow-hidden">

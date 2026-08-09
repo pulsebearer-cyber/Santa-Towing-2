@@ -20,7 +20,7 @@ export function AboutSection() {
           >
             <div className="aspect-[4/3] rounded-[1px] overflow-hidden shadow-2xl shadow-black/10 border border-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1621516087786-21820a40eef9?auto=format&fit=crop&q=80" 
+                src="https://i.ibb.co/fYF9HrC2/Welcome-Towing-Image.jpg" 
                 alt="Santa Towing & Garage Workshop" 
                 className="w-full h-full object-cover"
               />

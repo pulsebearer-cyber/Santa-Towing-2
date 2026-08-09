@@ -43,11 +43,6 @@ const STEPS = [
   { step: '05', title: 'Regular Reporting & Review', desc: 'Monthly or quarterly reviews of fleet spend, maintenance history, and optimization.' },
 ];
 
-const TESTIMONIALS = [
-  { id: 1, text: "Partnering with this team has reduced our fleet downtime by 40%. Their priority towing and fast repair turnaround are game-changers for our delivery operations.", author: "Samuel K.", role: "Operations Manager, FastTrack Logistics" },
-  { id: 2, text: "The dedicated account management and consolidated monthly billing have saved our finance team hours of work. Highly recommended for corporate fleets.", author: "Grace O.", role: "Fleet Director, Prime Corporate Services" },
-];
-
 const FAQS = [
   { q: 'What is the minimum fleet size required?', a: 'Our fleet partnerships typically start at 5 vehicles, but we can customize solutions for smaller, high-usage fleets.' },
   { q: 'What are the contract terms?', a: 'We offer flexible 12, 24, and 36-month service level agreements, as well as pay-as-you-go options with corporate discounts.' },
@@ -274,35 +269,7 @@ export default function Fleet() {
         </div>
       </section>
 
-      {/* 6. Client Success Stories */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Trusted by Leading Businesses</h2>
-            <p className="text-dark/70">See what our corporate partners have to say about our fleet services.</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {TESTIMONIALS.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-8 rounded-[1px] border border-dark/10 shadow-xl shadow-charcoal/5">
-                <div className="flex gap-1 mb-6">
-                  {[1,2,3,4,5].map(star => <Star key={star} className="w-5 h-5 fill-accent text-accent" />)}
-                </div>
-                <p className="text-dark/80 text-lg italic mb-8">"{testimonial.text}"</p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white rounded-[1px] flex items-center justify-center font-bold text-dark/70">
-                    {testimonial.author.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-dark">{testimonial.author}</h4>
-                    <p className="text-sm text-dark/70">{testimonial.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 8. FAQs */}
       <section className="py-20 bg-white">

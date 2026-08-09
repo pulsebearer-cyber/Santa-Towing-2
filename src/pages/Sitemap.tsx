@@ -39,7 +39,6 @@ export default function Sitemap() {
         { label: "Careers", path: "/careers" },
         { label: "FAQs", path: "/faqs" },
         { label: "Gallery", path: "/gallery" },
-        { label: "Testimonials", path: "/testimonials" },
       ]
     },
     {
