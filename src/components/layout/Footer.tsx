@@ -69,14 +69,15 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               {[
                 { name: 'Home', path: '/' },
-                { name: 'About Us', path: '/about' },
+                { name: 'About Us', path: '/#about' },
                 { name: '24/7 Emergency Towing', path: '/towing' },
                 { name: 'Auto Repair & Maintenance', path: '/repairs' },
                 { name: 'Vehicle Rentals', path: '/rental' },
                 { name: 'Cars for Sale', path: '/sales' },
                 { name: 'Body Works & Spraying', path: '/body-works' },
                 { name: 'Auto Parts & Batteries', path: '/parts' },
-                { name: 'Contact & Dispatch', path: '/contact' }
+                { name: 'Contact & Dispatch', path: '/contact' },
+                { name: 'Sitemap', path: '/sitemap' }
               ].map(item => (
                 <li key={item.name}>
                   <Link to={item.path} className="hover:text-accent transition-colors flex items-center gap-2 text-white/80 hover:translate-x-1 duration-200">
