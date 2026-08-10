@@ -16,9 +16,9 @@ const FEATURED_POST = {
   title: '10 Essential Maintenance Tips Before a Long Road Trip',
   excerpt: 'Planning a long journey? Make sure your vehicle is up to the task. From checking fluid levels to inspecting tire tread, these 10 tips will help you avoid breakdowns and ensure a safe, comfortable trip for you and your passengers.',
   category: 'Maintenance Tips',
-  image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80',
+  image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg',
   author: 'David Mensah',
-  authorImg: 'https://i.pravatar.cc/150?img=11',
+  authorImg: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png',
   date: 'Oct 15, 2023',
   readTime: '6 min read'
 };
@@ -29,9 +29,9 @@ const BLOG_POSTS = [
     title: 'How to Choose the Right Oil for Your Engine',
     excerpt: 'Synthetic, conventional, or blend? Understand the differences and find out what works best for your car\'s specific engine type.',
     category: 'Maintenance Tips',
-    image: 'https://images.unsplash.com/photo-1635815615705-ebcc5031b6e4?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg',
     author: 'Sarah Osei',
-    authorImg: 'https://i.pravatar.cc/150?img=5',
+    authorImg: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg',
     date: 'Oct 10, 2023',
     readTime: '4 min read'
   },
@@ -40,9 +40,9 @@ const BLOG_POSTS = [
     title: 'Used Car Buying Guide: Red Flags to Watch Out For',
     excerpt: 'Don\'t get caught buying a lemon. Learn the critical signs of hidden damage and mechanical issues when inspecting a used vehicle.',
     category: 'Vehicle Buying Guide',
-    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg',
     author: 'Kwame A.',
-    authorImg: 'https://i.pravatar.cc/150?img=8',
+    authorImg: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg',
     date: 'Sep 28, 2023',
     readTime: '8 min read'
   },
@@ -51,9 +51,9 @@ const BLOG_POSTS = [
     title: 'Top 5 Scenic Routes for Your Next Weekend Getaway',
     excerpt: 'Rent an SUV from our fleet and explore these breathtaking drives. Complete with rest stop recommendations and driving tips.',
     category: 'Rental Advice',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg',
     author: 'Linda T.',
-    authorImg: 'https://i.pravatar.cc/150?img=9',
+    authorImg: 'https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg',
     date: 'Sep 20, 2023',
     readTime: '5 min read'
   },
@@ -62,9 +62,9 @@ const BLOG_POSTS = [
     title: 'Defensive Driving Techniques Every Driver Should Know',
     excerpt: 'Stay safe on unpredictable roads by anticipating hazards and maintaining safe following distances in heavy traffic.',
     category: 'Road Safety',
-    image: 'https://images.unsplash.com/photo-1464219222984-216ebffaaf85?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg',
     author: 'David Mensah',
-    authorImg: 'https://i.pravatar.cc/150?img=11',
+    authorImg: 'https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg',
     date: 'Sep 12, 2023',
     readTime: '7 min read'
   },
@@ -73,9 +73,9 @@ const BLOG_POSTS = [
     title: 'The Future of EVs in Our City: What You Need to Know',
     excerpt: 'As electric vehicles become more common, how is the local infrastructure adapting? A look at charging stations and EV maintenance.',
     category: 'Automotive News',
-    image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938cb?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg',
     author: 'Sarah Osei',
-    authorImg: 'https://i.pravatar.cc/150?img=5',
+    authorImg: 'https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg',
     date: 'Sep 05, 2023',
     readTime: '5 min read'
   },
@@ -84,9 +84,9 @@ const BLOG_POSTS = [
     title: 'When to Replace Your Brake Pads (Don\'t Ignore These Signs)',
     excerpt: 'Squeaking? Grinding? Spongy pedal? Learn to recognize the warning signs that your brake system needs immediate attention.',
     category: 'Maintenance Tips',
-    image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg',
     author: 'Michael B.',
-    authorImg: 'https://i.pravatar.cc/150?img=12',
+    authorImg: 'https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg',
     date: 'Aug 29, 2023',
     readTime: '4 min read'
   },
@@ -114,7 +114,7 @@ export default function Blog() {
       <section className="relative bg-primary overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1503376713918-a6d10db8d341?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
         
@@ -369,7 +369,7 @@ export default function Blog() {
 
       {/* 6. Newsletter Signup Banner (Bottom) */}
       <section className="py-20 bg-primary text-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('https://i.ibb.co/3998gkTG/Image-16-Accessories.jpg')] bg-cover bg-center opacity-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent" />
         <div className="max-w-2xl mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Automotive Tips in Your Inbox</h2>

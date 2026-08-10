@@ -10,56 +10,56 @@ const CORE_SERVICES = [
     title: 'Emergency Towing', 
     desc: 'Rapid response towing available 24/7. We safely transport your vehicle to any destination or our secure facility.', 
     icon: Truck, 
-    image: 'https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/3998gkTG/Image-16-Accessories.jpg' 
   },
   { 
     id: 2, 
     title: 'Vehicle Recovery', 
     desc: 'Expert off-road and accident recovery using specialized equipment to handle any complex situation.', 
     icon: Shield, 
-    image: 'https://images.unsplash.com/photo-1549429402-95f877f0a6d5?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg' 
   },
   { 
     id: 3, 
     title: 'Car Rental', 
     desc: 'Premium and affordable rental vehicles for daily, weekly, or monthly use, tailored to your needs.', 
     icon: Car, 
-    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' 
   },
   { 
     id: 4, 
     title: 'Vehicle Sales', 
     desc: 'Quality inspected new and pre-owned vehicles. Find your next car with our trusted sales team.', 
     icon: Car, 
-    image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' 
   },
   { 
     id: 5, 
     title: 'Auto Repairs', 
     desc: 'Comprehensive mechanical repairs, computer diagnostics, and regular maintenance by certified mechanics.', 
     icon: Wrench, 
-    image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg' 
   },
   { 
     id: 6, 
     title: 'Body Works & Spray Painting', 
     desc: 'Professional dent repair, collision restoration, and premium oven-baked spray painting services.', 
     icon: ShieldCheck, 
-    image: 'https://images.unsplash.com/photo-1504222490345-c075b6008014?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' 
   },
   { 
     id: 7, 
     title: 'Auto Parts & Batteries', 
     desc: 'Genuine OEM replacement parts, premium batteries, and quality automotive accessories.', 
     icon: Battery, 
-    image: 'https://images.unsplash.com/photo-1618641986557-1de02377c8e9?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg' 
   },
   { 
     id: 8, 
     title: 'Fleet Services', 
     desc: 'Dedicated commercial fleet maintenance, tracking, and priority repair solutions for businesses.', 
     icon: Settings, 
-    image: 'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80' 
+    image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' 
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Services() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center bg-primary overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg)' }}
         />
         <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 text-center">
@@ -264,7 +264,7 @@ export default function Services() {
             </div>
             <div className="md:w-1/2 aspect-video md:aspect-auto relative">
               <img 
-                src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80" 
+                src="https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg" 
                 alt="Emergency Towing" 
                 className="w-full h-full object-cover"
               />

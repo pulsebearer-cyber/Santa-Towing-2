@@ -27,12 +27,12 @@ const WHY_CHOOSE_US_FLEET = [
 ];
 
 const INDUSTRIES = [
-  { title: 'Logistics & Delivery', icon: Truck, image: 'https://images.unsplash.com/photo-1586528116311-ad8ed7e66364?auto=format&fit=crop&q=80' },
-  { title: 'Corporate Fleets', icon: Building2, image: 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80' },
-  { title: 'Rental Agencies', icon: CarTaxiFront, image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80' },
-  { title: 'Government & NGOs', icon: ShieldCheck, image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&q=80' },
-  { title: 'Construction & Haulage', icon: HardHat, image: 'https://images.unsplash.com/photo-1541604193435-22287d32c2c2?auto=format&fit=crop&q=80' },
-  { title: 'Ride-Hailing Operators', icon: MapPin, image: 'https://images.unsplash.com/photo-1619551734325-81aaf323686c?auto=format&fit=crop&q=80' },
+  { title: 'Logistics & Delivery', icon: Truck, image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg' },
+  { title: 'Corporate Fleets', icon: Building2, image: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg' },
+  { title: 'Rental Agencies', icon: CarTaxiFront, image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
+  { title: 'Government & NGOs', icon: ShieldCheck, image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { title: 'Construction & Haulage', icon: HardHat, image: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg' },
+  { title: 'Ride-Hailing Operators', icon: MapPin, image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
 ];
 
 const STEPS = [
@@ -62,7 +62,7 @@ export default function Fleet() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80" 
+            src="https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg" 
             alt="Corporate Fleet" 
             className="w-full h-full object-cover"
           />
@@ -247,7 +247,7 @@ export default function Fleet() {
               <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-[1px] p-4 shadow-2xl">
                 <div className="bg-white rounded-[1px] overflow-hidden aspect-video shadow-inner flex items-center justify-center relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
+                    src="https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg" 
                     alt="Dashboard Preview" 
                     className="w-full h-full object-cover opacity-90"
                   />

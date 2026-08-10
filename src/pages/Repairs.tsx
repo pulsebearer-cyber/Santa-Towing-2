@@ -71,7 +71,7 @@ export default function Repairs() {
       <section className="relative bg-primary overflow-hidden pt-12 pb-32 md:pt-20 md:pb-40">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
         
@@ -264,7 +264,7 @@ export default function Repairs() {
 
       {/* 6. Booking Widget */}
       <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-[80%] bg-[url('https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80')] bg-cover bg-center rounded-[1px] hidden lg:block" />
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-[80%] bg-[url('https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg')] bg-cover bg-center rounded-[1px] hidden lg:block" />
         
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-2xl bg-primary rounded-[1px] p-8 md:p-12 shadow-2xl">
@@ -310,10 +310,10 @@ export default function Repairs() {
         
         <div className="flex gap-4 overflow-x-auto no-scrollbar pb-8 px-4 md:px-8 snap-x">
           {[
-            'https://images.unsplash.com/photo-1632823462575-de3948e30bba?auto=format&fit=crop&q=80',
-            'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80',
-            'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80',
-            'https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80'
+            'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg',
+            'https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg',
+            'https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg',
+            'https://i.ibb.co/3998gkTG/Image-16-Accessories.jpg'
           ].map((img, idx) => (
             <motion.div 
               key={idx}

@@ -74,13 +74,13 @@ export default function BodyWorks() {
 
   const beforeAfterImages = [
     {
-      before: 'https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80',
-      after: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80',
+      before: 'https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg',
+      after: 'https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg',
       title: 'Front Bumper Restoration'
     },
     {
-      before: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80',
-      after: 'https://images.unsplash.com/photo-1503376713918-a6d10db8d341?auto=format&fit=crop&q=80',
+      before: 'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg',
+      after: 'https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg',
       title: 'Full Body Respray'
     }
   ];
@@ -92,7 +92,7 @@ export default function BodyWorks() {
       <section className="relative bg-primary overflow-hidden pt-12 pb-32 md:pt-20 md:pb-40">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600706432502-777cbdf8826c?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
         
@@ -291,7 +291,7 @@ export default function BodyWorks() {
             </div>
             <div className="md:w-1/2 relative z-10 w-full">
               <div className="aspect-video rounded-[1px] overflow-hidden bg-white/5 border border-white/10">
-                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80" alt="Insurance paperwork" className="w-full h-full object-cover opacity-80 mix-blend-luminosity" />
+                <img src="https://i.ibb.co/3998gkTG/Image-16-Accessories.jpg" alt="Insurance paperwork" className="w-full h-full object-cover opacity-80 mix-blend-luminosity" />
               </div>
             </div>
           </div>

@@ -6,14 +6,14 @@ import { cn } from '@/lib/utils';
 
 // Local mock data since we need more items for filtering
 const SALES_VEHICLES = [
-  { id: 1, type: 'New', make: 'Mercedes-Benz', model: 'E-Class', name: '2024 Mercedes-Benz E-Class', price: 'GH₵ 980,000', fuel: 'Hybrid', transmission: 'Automatic', year: 2024, mileage: '0 km', bodyType: 'Sedan', image: 'https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&q=80' },
-  { id: 2, type: 'New', make: 'Range Rover', model: 'Sport', name: '2024 Range Rover Sport', price: 'GH₵ 1,450,000', fuel: 'Petrol', transmission: 'Automatic', year: 2024, mileage: '25 km', bodyType: 'SUV', image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80' },
-  { id: 3, type: 'Foreign Used', make: 'Toyota', model: 'Camry', name: '2020 Toyota Camry SE', price: 'GH₵ 264,000', fuel: 'Petrol', transmission: 'Automatic', year: 2020, mileage: '72,000 km', bodyType: 'Sedan', image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80' },
-  { id: 4, type: 'Ghana Used', make: 'Hyundai', model: 'Elantra', name: '2018 Hyundai Elantra', price: 'GH₵ 144,000', fuel: 'Petrol', transmission: 'Manual', year: 2018, mileage: '136,000 km', bodyType: 'Sedan', image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80' },
-  { id: 5, type: 'Foreign Used', make: 'Honda', model: 'CR-V', name: '2019 Honda CR-V EX', price: 'GH₵ 320,000', fuel: 'Petrol', transmission: 'Automatic', year: 2019, mileage: '58,000 km', bodyType: 'SUV', image: 'https://images.unsplash.com/photo-1568844293986-8d0400ba4715?auto=format&fit=crop&q=80' },
-  { id: 6, type: 'Ghana Used', make: 'Kia', model: 'Rio', name: '2017 Kia Rio', price: 'GH₵ 95,000', fuel: 'Petrol', transmission: 'Manual', year: 2017, mileage: '150,000 km', bodyType: 'Hatchback', image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fd?auto=format&fit=crop&q=80' },
-  { id: 7, type: 'New', make: 'Toyota', model: 'Hilux', name: '2024 Toyota Hilux Invincible', price: 'GH₵ 850,000', fuel: 'Diesel', transmission: 'Automatic', year: 2024, mileage: '10 km', bodyType: 'Pickup', image: 'https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&q=80' },
-  { id: 8, type: 'Foreign Used', make: 'Lexus', model: 'RX', name: '2021 Lexus RX 350', price: 'GH₵ 680,000', fuel: 'Petrol', transmission: 'Automatic', year: 2021, mileage: '35,000 km', bodyType: 'SUV', image: 'https://images.unsplash.com/photo-1570733577150-1eb5fb6919db?auto=format&fit=crop&q=80' },
+  { id: 1, type: 'New', make: 'Mercedes-Benz', model: 'E-Class', name: '2024 Mercedes-Benz E-Class', price: 'GH₵ 980,000', fuel: 'Hybrid', transmission: 'Automatic', year: 2024, mileage: '0 km', bodyType: 'Sedan', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { id: 2, type: 'New', make: 'Range Rover', model: 'Sport', name: '2024 Range Rover Sport', price: 'GH₵ 1,450,000', fuel: 'Petrol', transmission: 'Automatic', year: 2024, mileage: '25 km', bodyType: 'SUV', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
+  { id: 3, type: 'Foreign Used', make: 'Toyota', model: 'Camry', name: '2020 Toyota Camry SE', price: 'GH₵ 264,000', fuel: 'Petrol', transmission: 'Automatic', year: 2020, mileage: '72,000 km', bodyType: 'Sedan', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { id: 4, type: 'Ghana Used', make: 'Hyundai', model: 'Elantra', name: '2018 Hyundai Elantra', price: 'GH₵ 144,000', fuel: 'Petrol', transmission: 'Manual', year: 2018, mileage: '136,000 km', bodyType: 'Sedan', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { id: 5, type: 'Foreign Used', make: 'Honda', model: 'CR-V', name: '2019 Honda CR-V EX', price: 'GH₵ 320,000', fuel: 'Petrol', transmission: 'Automatic', year: 2019, mileage: '58,000 km', bodyType: 'SUV', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
+  { id: 6, type: 'Ghana Used', make: 'Kia', model: 'Rio', name: '2017 Kia Rio', price: 'GH₵ 95,000', fuel: 'Petrol', transmission: 'Manual', year: 2017, mileage: '150,000 km', bodyType: 'Hatchback', image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
+  { id: 7, type: 'New', make: 'Toyota', model: 'Hilux', name: '2024 Toyota Hilux Invincible', price: 'GH₵ 850,000', fuel: 'Diesel', transmission: 'Automatic', year: 2024, mileage: '10 km', bodyType: 'Pickup', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
+  { id: 8, type: 'Foreign Used', make: 'Lexus', model: 'RX', name: '2021 Lexus RX 350', price: 'GH₵ 680,000', fuel: 'Petrol', transmission: 'Automatic', year: 2021, mileage: '35,000 km', bodyType: 'SUV', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
 ];
 
 const WHY_BUY_FEATURES = [
@@ -55,7 +55,7 @@ export default function Sales() {
       <section className="relative bg-primary overflow-hidden pt-12 pb-32 md:pt-20 md:pb-40">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
         
@@ -370,7 +370,7 @@ export default function Sales() {
             </div>
             
             <div className="bg-primary text-white rounded-[1px] p-8 md:p-12 flex flex-col justify-center shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1568844293986-8d0400ba4715?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+              <div className="absolute top-0 right-0 w-full h-full bg-[url('https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png')] bg-cover bg-center opacity-10 mix-blend-overlay" />
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-white/20 rounded-[1px] flex items-center justify-center mb-6 backdrop-blur-md">
                   <RefreshCcw className="w-8 h-8 text-white" />

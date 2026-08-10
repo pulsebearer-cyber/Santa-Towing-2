@@ -76,7 +76,7 @@ export function TowingAppPromo() {
                 {/* Map preview */}
                 <div className="h-44 bg-slate-100 rounded-[1px] overflow-hidden relative border border-gray-200">
                   <img 
-                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80" 
+                    src="https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg" 
                     alt="GPS Navigation" 
                     className="w-full h-full object-cover"
                   />

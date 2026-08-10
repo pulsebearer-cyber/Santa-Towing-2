@@ -5,12 +5,12 @@ import { cn } from '@/lib/utils';
 import { RENTAL_CATEGORIES } from '@/data/mockData';
 
 const RENTAL_VEHICLES = [
-  { id: 1, name: 'Toyota Corolla 2023', category: 'Sedan', daily: 'GH₵ 600', weekly: 'GH₵ 3,800', monthly: 'GH₵ 14,000', seats: 5, trans: 'Automatic', fuel: 'Petrol', image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80' },
-  { id: 2, name: 'Kia Sportage 2024', category: 'SUV', daily: 'GH₵ 900', weekly: 'GH₵ 5,800', monthly: 'GH₵ 21,000', seats: 5, trans: 'Automatic', fuel: 'Petrol', image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80' },
-  { id: 3, name: 'Toyota Hilux 2023', category: 'Pickup', daily: 'GH₵ 800', weekly: 'GH₵ 5,000', monthly: 'GH₵ 18,000', seats: 5, trans: 'Automatic', fuel: 'Diesel', image: 'https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&q=80' },
-  { id: 4, name: 'Mercedes-Benz E-Class', category: 'Luxury', daily: 'GH₵ 1,500', weekly: 'GH₵ 9,500', monthly: 'GH₵ 35,000', seats: 5, trans: 'Automatic', fuel: 'Premium', image: 'https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&q=80' },
-  { id: 5, name: 'Hyundai H1 2022', category: 'Van', daily: 'GH₵ 1,100', weekly: 'GH₵ 7,000', monthly: 'GH₵ 25,000', seats: 12, trans: 'Manual', fuel: 'Diesel', image: 'https://images.unsplash.com/photo-1610486842880-8b0d26859e2b?auto=format&fit=crop&q=80' },
-  { id: 6, name: 'Nissan Almera 2021', category: 'Economy', daily: 'GH₵ 400', weekly: 'GH₵ 2,500', monthly: 'GH₵ 9,000', seats: 4, trans: 'Automatic', fuel: 'Petrol', image: 'https://images.unsplash.com/photo-1590362891991-f20dc00f40ac?auto=format&fit=crop&q=80' },
+  { id: 1, name: 'Toyota Corolla 2023', category: 'Sedan', daily: 'GH₵ 600', weekly: 'GH₵ 3,800', monthly: 'GH₵ 14,000', seats: 5, trans: 'Automatic', fuel: 'Petrol', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { id: 2, name: 'Kia Sportage 2024', category: 'SUV', daily: 'GH₵ 900', weekly: 'GH₵ 5,800', monthly: 'GH₵ 21,000', seats: 5, trans: 'Automatic', fuel: 'Petrol', image: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png' },
+  { id: 3, name: 'Toyota Hilux 2023', category: 'Pickup', daily: 'GH₵ 800', weekly: 'GH₵ 5,000', monthly: 'GH₵ 18,000', seats: 5, trans: 'Automatic', fuel: 'Diesel', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
+  { id: 4, name: 'Mercedes-Benz E-Class', category: 'Luxury', daily: 'GH₵ 1,500', weekly: 'GH₵ 9,500', monthly: 'GH₵ 35,000', seats: 5, trans: 'Automatic', fuel: 'Premium', image: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg' },
+  { id: 5, name: 'Hyundai H1 2022', category: 'Van', daily: 'GH₵ 1,100', weekly: 'GH₵ 7,000', monthly: 'GH₵ 25,000', seats: 12, trans: 'Manual', fuel: 'Diesel', image: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg' },
+  { id: 6, name: 'Nissan Almera 2021', category: 'Economy', daily: 'GH₵ 400', weekly: 'GH₵ 2,500', monthly: 'GH₵ 9,000', seats: 4, trans: 'Automatic', fuel: 'Petrol', image: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg' },
 ];
 
 const RENTAL_FEATURES = [
@@ -58,7 +58,7 @@ export default function Rental() {
       <section className="relative bg-primary overflow-hidden pt-12 pb-32 md:pt-20 md:pb-40">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent" />
         

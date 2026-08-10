@@ -53,7 +53,7 @@ export default function VehicleDetails() {
   const { id } = useParams();
   const [activeTab, setActiveTab] = useState('Specs');
   const [activeSpecTab, setActiveSpecTab] = useState('Engine');
-  const [activeImage, setActiveImage] = useState('https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&q=80');
+  const [activeImage, setActiveImage] = useState('https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png');
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   
   // Financing Calculator State
@@ -70,10 +70,10 @@ export default function VehicleDetails() {
   };
 
   const images = [
-    'https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80'
+    'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg',
+    'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg',
+    'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg',
+    'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg'
   ];
 
   return (
@@ -413,7 +413,7 @@ export default function VehicleDetails() {
                 </div>
                 
                 <div className="mt-6 aspect-[2/1] rounded-[1px] overflow-hidden bg-white relative">
-                   <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale opacity-80" />
+                   <div className="absolute inset-0 bg-[url('https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg')] bg-cover bg-center grayscale opacity-80" />
                    <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-8 h-8 bg-accent text-white rounded-[1px] flex items-center justify-center shadow-lg animate-bounce">
                         <MapPin className="w-4 h-4" />
@@ -440,9 +440,9 @@ export default function VehicleDetails() {
           
           <div className="grid md:grid-cols-3 gap-6">
              {[
-               { id: 2, type: 'New', name: '2024 Range Rover Sport', price: 'GH₵ 1,450,000', image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80' },
-               { id: 7, type: 'New', name: '2024 Toyota Hilux', price: 'GH₵ 850,000', image: 'https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&q=80' },
-               { id: 8, type: 'Foreign Used', name: '2021 Lexus RX 350', price: 'GH₵ 680,000', image: 'https://images.unsplash.com/photo-1570733577150-1eb5fb6919db?auto=format&fit=crop&q=80' }
+               { id: 2, type: 'New', name: '2024 Range Rover Sport', price: 'GH₵ 1,450,000', image: 'https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg' },
+               { id: 7, type: 'New', name: '2024 Toyota Hilux', price: 'GH₵ 850,000', image: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg' },
+               { id: 8, type: 'Foreign Used', name: '2021 Lexus RX 350', price: 'GH₵ 680,000', image: 'https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg' }
              ].map((vehicle, idx) => (
                 <div key={idx} className="bg-white rounded-[1px] overflow-hidden border border-dark/10 shadow-sm hover:shadow-lg transition-all group flex flex-col">
                   <div className="aspect-[4/3] relative overflow-hidden bg-white">
@@ -464,7 +464,7 @@ export default function VehicleDetails() {
 
       {/* 11. Call-to-Action Banner */}
       <section className="py-24 bg-primary text-white text-center relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay" />
         <div className="relative z-10 max-w-3xl mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Interested in This Vehicle?</h2>
           <p className="text-lg md:text-xl mb-10 text-white/70">

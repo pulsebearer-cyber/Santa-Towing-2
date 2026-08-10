@@ -10,23 +10,23 @@ import {
 import { cn } from '@/lib/utils';
 
 const CATEGORIES = [
-  { name: 'Car Batteries', icon: Zap, img: 'https://images.unsplash.com/photo-1620054705359-994c63391789?auto=format&fit=crop&q=80' },
-  { name: 'Engine Oil & Fluids', icon: Droplet, img: 'https://images.unsplash.com/photo-1635815615705-ebcc5031b6e4?auto=format&fit=crop&q=80' },
-  { name: 'Brake Pads & Discs', icon: Circle, img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80' },
-  { name: 'Tires', icon: CircleDot, img: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&q=80' },
-  { name: 'Filters', icon: Settings, img: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80' },
-  { name: 'Suspension Parts', icon: Wrench, img: 'https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&q=80' },
-  { name: 'Lighting', icon: Lightbulb, img: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80' },
-  { name: 'Accessories', icon: Package, img: 'https://images.unsplash.com/photo-1600706432502-777cbdf8826c?auto=format&fit=crop&q=80' },
+  { name: 'Car Batteries', icon: Zap, img: 'https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg' },
+  { name: 'Engine Oil & Fluids', icon: Droplet, img: 'https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg' },
+  { name: 'Brake Pads & Discs', icon: Circle, img: 'https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg' },
+  { name: 'Tires', icon: CircleDot, img: 'https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg' },
+  { name: 'Filters', icon: Settings, img: 'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg' },
+  { name: 'Suspension Parts', icon: Wrench, img: 'https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg' },
+  { name: 'Lighting', icon: Lightbulb, img: 'https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg' },
+  { name: 'Accessories', icon: Package, img: 'https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg' },
 ];
 
 const PRODUCTS = [
-  { id: 1, name: 'Premium Heavy Duty Battery 70Ah', brand: 'Bosch', category: 'Batteries', price: 'GH₵ 850', rating: 5, image: 'https://images.unsplash.com/photo-1620054705359-994c63391789?auto=format&fit=crop&q=80' },
-  { id: 2, name: 'Synthetic Motor Oil 5W-30 (5L)', brand: 'Castrol', category: 'Oil & Fluids', price: 'GH₵ 420', rating: 4.8, image: 'https://images.unsplash.com/photo-1635815615705-ebcc5031b6e4?auto=format&fit=crop&q=80' },
-  { id: 3, name: 'Ceramic Brake Pads (Front)', brand: 'Brembo', category: 'Brake Pads & Discs', price: 'GH₵ 650', rating: 4.9, image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80' },
-  { id: 4, name: 'All-Season Tire 205/55R16', brand: 'Michelin', category: 'Tires', price: 'GH₵ 1,200', rating: 5, image: 'https://images.unsplash.com/photo-1580274455191-1c62238fa333?auto=format&fit=crop&q=80' },
-  { id: 5, name: 'Engine Air Filter', brand: 'K&N', category: 'Filters', price: 'GH₵ 350', rating: 4.7, image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80' },
-  { id: 6, name: 'LED Headlight Bulbs H7 (Pair)', brand: 'Philips', category: 'Lighting', price: 'GH₵ 550', rating: 4.6, image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80' },
+  { id: 1, name: 'Premium Heavy Duty Battery 70Ah', brand: 'Bosch', category: 'Batteries', price: 'GH₵ 850', rating: 5, image: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg' },
+  { id: 2, name: 'Synthetic Motor Oil 5W-30 (5L)', brand: 'Castrol', category: 'Oil & Fluids', price: 'GH₵ 420', rating: 4.8, image: 'https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg' },
+  { id: 3, name: 'Ceramic Brake Pads (Front)', brand: 'Brembo', category: 'Brake Pads & Discs', price: 'GH₵ 650', rating: 4.9, image: 'https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg' },
+  { id: 4, name: 'All-Season Tire 205/55R16', brand: 'Michelin', category: 'Tires', price: 'GH₵ 1,200', rating: 5, image: 'https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg' },
+  { id: 5, name: 'Engine Air Filter', brand: 'K&N', category: 'Filters', price: 'GH₵ 350', rating: 4.7, image: 'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg' },
+  { id: 6, name: 'LED Headlight Bulbs H7 (Pair)', brand: 'Philips', category: 'Lighting', price: 'GH₵ 550', rating: 4.6, image: 'https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg' },
 ];
 
 const WHY_BUY = [
@@ -65,7 +65,7 @@ export default function Parts() {
       <section className="relative bg-primary overflow-hidden pt-12 pb-32 md:pt-24 md:pb-40">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
         

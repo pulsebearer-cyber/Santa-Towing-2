@@ -18,12 +18,12 @@ const TOWING_PROCESS = [
 ];
 
 const TOWING_TYPES = [
-  { title: 'Light Vehicle Towing', desc: 'Safe transport for sedans, hatchbacks, and small SUVs.', image: 'https://images.unsplash.com/photo-1549429402-95f877f0a6d5?auto=format&fit=crop&q=80' },
-  { title: 'Heavy-Duty Towing', desc: 'Capable of handling trucks, buses, and commercial vehicles.', image: 'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80' },
-  { title: 'Accident Recovery', desc: 'Careful extraction and transport from accident scenes.', image: 'https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80' },
-  { title: 'Flatbed Towing', desc: 'Ideal for luxury cars, AWD vehicles, and severe damage.', image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80' },
-  { title: 'Winching & Off-Road', desc: 'Specialized equipment to pull vehicles out of ditches or mud.', image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80' },
-  { title: 'Long-Distance Towing', desc: 'Secure transportation across cities and regions.', image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80' },
+  { title: 'Light Vehicle Towing', desc: 'Safe transport for sedans, hatchbacks, and small SUVs.', image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg' },
+  { title: 'Heavy-Duty Towing', desc: 'Capable of handling trucks, buses, and commercial vehicles.', image: 'https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg' },
+  { title: 'Accident Recovery', desc: 'Careful extraction and transport from accident scenes.', image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg' },
+  { title: 'Flatbed Towing', desc: 'Ideal for luxury cars, AWD vehicles, and severe damage.', image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg' },
+  { title: 'Winching & Off-Road', desc: 'Specialized equipment to pull vehicles out of ditches or mud.', image: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg' },
+  { title: 'Long-Distance Towing', desc: 'Secure transportation across cities and regions.', image: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg' },
 ];
 
 const TOWING_FAQS = [
@@ -44,7 +44,7 @@ export default function Towing() {
       <section className="relative bg-primary overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?auto=format&fit=crop&q=80)' }}
+          style={{ backgroundImage: 'url(https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/40" />
         
@@ -253,7 +253,7 @@ export default function Towing() {
             
             <div className="bg-white rounded-[1px] overflow-hidden aspect-square relative shadow-xl border-8 border-white">
               {/* Map Placeholder */}
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale opacity-50" />
+              <div className="absolute inset-0 bg-[url('https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg')] bg-cover bg-center grayscale opacity-50" />
               <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
               
               {/* Map Markers */}

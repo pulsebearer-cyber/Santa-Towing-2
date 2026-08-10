@@ -11,9 +11,9 @@ const ARTICLE = {
   id: 1,
   title: '10 Essential Maintenance Tips Before a Long Road Trip',
   category: 'Maintenance Tips',
-  image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80',
+  image: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg',
   author: 'David Mensah',
-  authorImg: 'https://i.pravatar.cc/150?img=11',
+  authorImg: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg',
   authorBio: 'David is a certified master mechanic with over 15 years of experience in automotive repair and maintenance. When he is not fixing cars, he enjoys writing about automotive safety and off-roading.',
   date: 'Oct 15, 2023',
   readTime: '6 min read',
@@ -37,7 +37,7 @@ const ARTICLE = {
     <h2>3. Examine Your Tires</h2>
     <p>Your tires are the only point of contact between your car and the road. Check the tire pressure (including the spare!) when the tires are cold. Look for any signs of uneven wear, cracks, or bulges. Use the "penny test" to ensure you have enough tread depth for safe driving, especially if you expect rain.</p>
     
-    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80" alt="Checking tire pressure" />
+    <img src="https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg" alt="Checking tire pressure" />
 
     <h2>4. Test the Battery</h2>
     <p>A dead battery is a common cause of road trip delays. Check the battery terminals for corrosion and ensure the connections are tight. If your battery is more than three years old, it's a good idea to have it load-tested by a professional to ensure it can handle the journey.</p>
@@ -53,7 +53,7 @@ const RELATED_ARTICLES = [
     id: 2,
     title: 'How to Choose the Right Oil for Your Engine',
     category: 'Maintenance Tips',
-    image: 'https://images.unsplash.com/photo-1635815615705-ebcc5031b6e4?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg',
     date: 'Oct 10, 2023',
     readTime: '4 min read'
   },
@@ -61,7 +61,7 @@ const RELATED_ARTICLES = [
     id: 7,
     title: 'When to Replace Your Brake Pads',
     category: 'Maintenance Tips',
-    image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg',
     date: 'Aug 29, 2023',
     readTime: '4 min read'
   },
@@ -69,7 +69,7 @@ const RELATED_ARTICLES = [
     id: 5,
     title: 'Defensive Driving Techniques Every Driver Should Know',
     category: 'Road Safety',
-    image: 'https://images.unsplash.com/photo-1464219222984-216ebffaaf85?auto=format&fit=crop&q=80',
+    image: 'https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg',
     date: 'Sep 12, 2023',
     readTime: '7 min read'
   }

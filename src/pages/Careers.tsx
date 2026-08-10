@@ -149,7 +149,7 @@ export default function Careers() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/40 z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1517524285303-d6fc683dddf8?auto=format&fit=crop&q=80" 
+            src="https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg" 
             alt="Auto workshop team" 
             className="w-full h-full object-cover"
           />
@@ -253,12 +253,12 @@ export default function Careers() {
             <div className="w-full lg:w-1/2">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1598257006626-48b0c252070d?auto=format&fit=crop&q=80" 
+                  src="https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg" 
                   alt="Mechanics discussing" 
                   className="rounded-[1px] w-full h-48 lg:h-64 object-cover"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80" 
+                  src="https://i.ibb.co/WpyLYZQk/Image-15-Car-Lightening-maintenance.jpg" 
                   alt="Customer service" 
                   className="rounded-[1px] w-full h-48 lg:h-64 object-cover translate-y-8"
                 />

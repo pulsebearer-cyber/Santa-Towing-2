@@ -20,7 +20,7 @@ const LOCATIONS = [
     address: '123 Automotive Avenue, Spintex Road, Accra, Ghana',
     phone: '0244753849',
     hours: 'Mon-Sat: 8:00 AM - 6:00 PM',
-    mapUrl: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80'
+    mapUrl: 'https://i.ibb.co/3998gkTG/Image-16-Accessories.jpg'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const LOCATIONS = [
     address: '45 Ring Road, Kumasi, Ghana',
     phone: '0244753849',
     hours: 'Mon-Sat: 8:00 AM - 5:00 PM',
-    mapUrl: 'https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?auto=format&fit=crop&q=80'
+    mapUrl: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg'
   }
 ];
 
@@ -63,7 +63,7 @@ export default function Contact() {
       {/* 1. Hero Banner */}
       <section className="relative bg-primary text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20" />
+          <div className="absolute inset-0 bg-[url('https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png')] bg-cover bg-center opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent" />
         </div>
         

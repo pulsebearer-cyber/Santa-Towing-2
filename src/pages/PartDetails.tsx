@@ -20,9 +20,9 @@ const PRODUCT = {
   inStock: true,
   sku: 'BSH-70AH-HD',
   images: [
-    'https://images.unsplash.com/photo-1620054705359-994c63391789?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80'
+    'https://i.ibb.co/23wLXy6t/Image-12-Tyre-Maintenance.jpg',
+    'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg',
+    'https://i.ibb.co/35NfN5Lx/Image-14-Suspension-Parts-maintenance.jpg'
   ],
   specs: [
     { label: 'Voltage', value: '12V' },
@@ -38,9 +38,9 @@ const PRODUCT = {
 };
 
 const RELATED_PRODUCTS = [
-  { id: 2, name: 'Synthetic Motor Oil 5W-30 (5L)', brand: 'Castrol', price: 'GH₵ 420', rating: 4.8, image: 'https://images.unsplash.com/photo-1635815615705-ebcc5031b6e4?auto=format&fit=crop&q=80' },
-  { id: 3, name: 'Ceramic Brake Pads (Front)', brand: 'Brembo', price: 'GH₵ 650', rating: 4.9, image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80' },
-  { id: 5, name: 'Engine Air Filter', brand: 'K&N', price: 'GH₵ 350', rating: 4.7, image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80' },
+  { id: 2, name: 'Synthetic Motor Oil 5W-30 (5L)', brand: 'Castrol', price: 'GH₵ 420', rating: 4.8, image: 'https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg' },
+  { id: 3, name: 'Ceramic Brake Pads (Front)', brand: 'Brembo', price: 'GH₵ 650', rating: 4.9, image: 'https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg' },
+  { id: 5, name: 'Engine Air Filter', brand: 'K&N', price: 'GH₵ 350', rating: 4.7, image: 'https://i.ibb.co/qV5D1J9/Image-13-Filters-maintenance.jpg' },
 ];
 
 const PRODUCT_FAQS = [

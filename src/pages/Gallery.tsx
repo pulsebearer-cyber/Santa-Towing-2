@@ -12,20 +12,20 @@ const CATEGORIES = [
 ];
 
 const GALLERY_IMAGES = [
-  { id: 1, category: 'Workshop', url: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80', title: 'State-of-the-art diagnostic bay', span: 'col-span-1 row-span-2' },
-  { id: 2, category: 'Towing Fleet', url: 'https://images.unsplash.com/photo-1543393470-b328ce70c40e?auto=format&fit=crop&q=80', title: 'Heavy-duty recovery vehicle', span: 'col-span-2 row-span-1' },
-  { id: 3, category: 'Team & Facilities', url: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80', title: 'Our expert mechanics', span: 'col-span-1 row-span-1' },
-  { id: 4, category: 'Vehicle Sales', url: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80', title: 'Premium pre-owned inventory', span: 'col-span-1 row-span-1' },
-  { id: 5, category: 'Rental Fleet', url: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80', title: 'Luxury SUV rentals', span: 'col-span-1 row-span-2' },
-  { id: 6, category: 'Body Works', url: 'https://images.unsplash.com/photo-1605272615783-a979148d88e6?auto=format&fit=crop&q=80', title: 'Custom paint job', span: 'col-span-2 row-span-2' },
-  { id: 7, category: 'Workshop', url: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80', title: 'Engine overhaul in progress', span: 'col-span-1 row-span-1' },
-  { id: 8, category: 'Towing Fleet', url: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80', title: 'City-wide flatbed towing', span: 'col-span-1 row-span-1' },
+  { id: 1, category: 'Workshop', url: 'https://i.ibb.co/KcZkH37Y/Image-3-Sedan-Toyotta-Corolla.jpg', title: 'State-of-the-art diagnostic bay', span: 'col-span-1 row-span-2' },
+  { id: 2, category: 'Towing Fleet', url: 'https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg', title: 'Heavy-duty recovery vehicle', span: 'col-span-2 row-span-1' },
+  { id: 3, category: 'Team & Facilities', url: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg', title: 'Our expert mechanics', span: 'col-span-1 row-span-1' },
+  { id: 4, category: 'Vehicle Sales', url: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg', title: 'Premium pre-owned inventory', span: 'col-span-1 row-span-1' },
+  { id: 5, category: 'Rental Fleet', url: 'https://i.ibb.co/zVkLKHdN/Image-2-A-SUV-KIA-Sportage-2024-Ratio.png', title: 'Luxury SUV rentals', span: 'col-span-1 row-span-2' },
+  { id: 6, category: 'Body Works', url: 'https://i.ibb.co/Mx8G6vHw/Image-5-Economy-Nissan-Almera-2021.jpg', title: 'Custom paint job', span: 'col-span-2 row-span-2' },
+  { id: 7, category: 'Workshop', url: 'https://i.ibb.co/DH19ffJd/Image-6-Luxury-Mercedes-Benz.jpg', title: 'Engine overhaul in progress', span: 'col-span-1 row-span-1' },
+  { id: 8, category: 'Towing Fleet', url: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg', title: 'City-wide flatbed towing', span: 'col-span-1 row-span-1' },
 ];
 
 const VIDEOS = [
-  { id: 1, title: 'Inside Our Advanced Workshop', thumb: 'https://images.unsplash.com/photo-1503376713918-a6d10db8d341?auto=format&fit=crop&q=80', duration: '2:45' },
-  { id: 2, title: 'Emergency Towing Operation', thumb: 'https://images.unsplash.com/photo-1464219222984-216ebffaaf85?auto=format&fit=crop&q=80', duration: '1:30' },
-  { id: 3, title: 'Body Works Transformation', thumb: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80', duration: '3:10' },
+  { id: 1, title: 'Inside Our Advanced Workshop', thumb: 'https://i.ibb.co/WpNkptMZ/Image-4-Van-Hyundai-H1-2022.jpg', duration: '2:45' },
+  { id: 2, title: 'Emergency Towing Operation', thumb: 'https://i.ibb.co/gZh5x06r/Image-1-Towing-Vehicle.jpg', duration: '1:30' },
+  { id: 3, title: 'Body Works Transformation', thumb: 'https://i.ibb.co/vC6nfrK8/Image-7-Pickup-Toyota-Hilux-2023.jpg', duration: '3:10' },
 ];
 
 export default function Gallery() {
@@ -97,7 +97,7 @@ export default function Gallery() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80" 
+            src="https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg" 
             alt="Automotive Gallery" 
             className="w-full h-full object-cover opacity-40"
           />
@@ -254,7 +254,7 @@ export default function Gallery() {
           >
             {/* After Image (Background) */}
             <img 
-              src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80" 
+              src="https://i.ibb.co/j9GzSqt8/Image-9-Car-Battery-Maintenance.jpg" 
               alt="After repair" 
               className="absolute inset-0 w-full h-full object-cover"
               draggable="false"
@@ -266,7 +266,7 @@ export default function Gallery() {
               style={{ width: `${sliderPosition}%` }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&q=80" 
+                src="https://i.ibb.co/1YFx5jQV/Image-10-Engine-Oil-and-Fluids-Maintenance.jpg" 
                 alt="Before repair" 
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ width: '100vw', maxWidth: 'none' }} // Negate the parent's dynamic width
@@ -347,7 +347,7 @@ export default function Gallery() {
             {[1,2,3,4].map((i) => (
               <div key={i} className="aspect-square bg-white rounded-[1px] overflow-hidden relative group">
                 <img 
-                  src={`https://images.unsplash.com/photo-${1500000000000 + i}?auto=format&fit=crop&q=80`} 
+                  src={`https://i.ibb.co/JRyRmbjF/Image-11-Brake-Parts-and-Disk-Maintenance.jpg + i}?auto=format&fit=crop&q=80`} 
                   alt="Instagram post" 
                   className="w-full h-full object-cover"
                 />
