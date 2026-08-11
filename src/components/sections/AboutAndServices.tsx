@@ -225,3 +225,70 @@ export function ServicesSection() {
     </section>
   );
 }
+
+export function TowingServicesHomeSection() {
+  return (
+    <section className="py-20 lg:py-28 bg-white overflow-hidden border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Column: Content */}
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="inline-block px-3.5 py-1.5 bg-accent/10 text-accent font-bold rounded-[1px] text-xs uppercase tracking-wider mb-4 border border-accent/20">
+              Emergency & Scheduled
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark mb-6 tracking-tight">
+              Rapid Response Towing Services
+            </h2>
+            <p className="text-slate-600 text-lg leading-relaxed mb-8">
+              Whether you are stranded on the highway with a flat tire, require heavy-duty accident recovery, or need safe transport for a luxury vehicle, our specialized towing fleet is available 24/7 across Ghana. We guarantee fast response times, professional handling, and transparent pricing to get you back on track safely.
+            </p>
+            
+            <Link 
+              to="/towing-archive" 
+              className="inline-flex items-center gap-2 bg-primary hover:bg-black text-white px-8 py-4 rounded-[1px] font-bold transition-all shadow-md hover:-translate-y-0.5"
+            >
+              <span>Explore Towing Services</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+
+          {/* Right Column: Visual */}
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative"
+          >
+            <div className="aspect-[4/3] rounded-[1px] overflow-hidden shadow-2xl border border-gray-100">
+              <img 
+                src="https://i.ibb.co/0RDWpXBh/Image-8-Heavy-Duty-Recovery-Vehicle-or-Car.jpg" 
+                alt="Professional Towing Services" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            {/* Decorative Element */}
+            <div className="absolute -bottom-6 -left-6 bg-accent text-white p-6 rounded-[1px] shadow-xl border border-white/20 hidden sm:block">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white/20 rounded-[1px] flex items-center justify-center backdrop-blur-sm">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <div className="text-2xl font-black">24/7</div>
+                  <div className="text-sm font-medium text-white/90">Emergency Response</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+        </div>
+      </div>
+    </section>
+  );
+}

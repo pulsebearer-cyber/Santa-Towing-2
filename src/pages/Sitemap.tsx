@@ -42,6 +42,7 @@ export default function Sitemap() {
       links: [
         { label: "All Services", path: "/services" },
         { label: "Emergency Towing", path: "/towing" },
+        { label: "Towing Archive", path: "/towing-archive" },
         { label: "Auto Repairs", path: "/repairs" },
         { label: "Auto Body Works", path: "/body-works" },
         { label: "Fleet Services", path: "/fleet" },

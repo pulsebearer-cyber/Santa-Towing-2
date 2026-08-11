@@ -13,6 +13,7 @@ import FloatingButtons from './components/layout/FloatingButtons';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Towing from './pages/Towing';
+import TowingArchive from './pages/TowingArchive';
 import Rental from './pages/Rental';
 import Sales from './pages/Sales';
 import VehicleDetails from './pages/VehicleDetails';
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/towing" element={<Towing />} />
+            <Route path="/towing-archive" element={<TowingArchive />} />
             <Route path="/rental" element={<Rental />} />
             <Route path="/sales" element={<Sales />} />
             <Route path="/sales/:id" element={<VehicleDetails />} />

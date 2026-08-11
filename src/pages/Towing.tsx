@@ -109,8 +109,8 @@ export default function Towing() {
                 
                 <div className="grid grid-cols-2 gap-4">
                   <input type="text" placeholder="Vehicle Make & Model" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
-                  <select className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark/70 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full appearance-none">
-                    <option value="" disabled selected>Select Issue...</option>
+                  <select defaultValue="" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark/70 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full appearance-none">
+                    <option value="" disabled>Select Issue...</option>
                     <option value="breakdown">Breakdown</option>
                     <option value="accident">Accident</option>
                     <option value="flat-tire">Flat Tire</option>
