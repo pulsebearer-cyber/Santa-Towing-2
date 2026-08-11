@@ -4,6 +4,7 @@ import { HERO_SLIDES, QUICK_ACTIONS } from '@/data/mockData';
 import { ChevronLeft, ChevronRight, Phone, ShieldCheck, Clock, Award, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 
 export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -169,6 +170,11 @@ export function HeroSlider() {
             )}
           />
         ))}
+      </div>
+      
+      {/* Scroll to Footer Arrow */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+        <ScrollToFooterArrow />
       </div>
     </div>
   );

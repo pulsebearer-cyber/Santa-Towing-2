@@ -31,6 +31,7 @@ import Booking from './pages/Booking';
 import Careers from './pages/Careers';
 import NotFound from './pages/NotFound';
 import Sitemap from './pages/Sitemap';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 export default function App() {
   return (
@@ -61,6 +62,7 @@ export default function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/sitemap" element={<Sitemap />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

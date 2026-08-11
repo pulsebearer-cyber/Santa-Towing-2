@@ -6,6 +6,7 @@ import {
   CheckCircle2, Star, ShieldCheck, Cog, ArrowRight, ChevronDown, Clock, 
   Calendar, Phone, Info
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const REPAIR_SERVICES = [
@@ -105,6 +106,10 @@ export default function Repairs() {
               <span>Call for Repair</span>
             </a>
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 
@@ -271,18 +276,18 @@ export default function Repairs() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Book an Appointment</h2>
             <p className="text-dark/70 mb-8">Schedule your repair or maintenance service online.</p>
             
-            <form className="space-y-4" onSubmit={e => e.preventDefault()}>
+            <form className="space-y-4" onSubmit={e => { e.preventDefault(); (e.target as HTMLFormElement).reset(); alert('Appointment booked successfully! We will contact you shortly.'); }}>
               <div className="grid sm:grid-cols-2 gap-4">
-                <input type="text" placeholder="Full Name" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
-                <input type="tel" placeholder="Phone Number" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
+                <input required type="text" placeholder="Full Name" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
+                <input required type="tel" placeholder="Phone Number" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
-                <input type="text" placeholder="Vehicle Make/Model" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
+                <input required type="text" placeholder="Vehicle Make/Model" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
                 <div className="relative">
-                  <input type="date" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent [&::-webkit-calendar-picker-indicator]:invert" />
+                  <input required type="date" className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent [&::-webkit-calendar-picker-indicator]:invert" />
                 </div>
               </div>
-              <textarea placeholder="Describe the issue or service needed" rows={4} className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent resize-none"></textarea>
+              <textarea required placeholder="Describe the issue or service needed" rows={4} className="w-full bg-white/5 border border-white/10 rounded-[1px] px-4 py-3 text-white focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent resize-none"></textarea>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <button type="submit" className="flex-1 bg-accent hover:bg-accent/90 text-white font-bold py-4 rounded-[1px] transition-all shadow-lg text-center">
                   Book for Repair

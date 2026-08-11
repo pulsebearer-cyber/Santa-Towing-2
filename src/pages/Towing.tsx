@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Phone, MapPin, Navigation, Clock, ShieldCheck, Tag, FileText, ArrowRight, Truck, Wrench, Car, ChevronDown, Star } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -36,6 +37,16 @@ const TOWING_FAQS = [
 
 export default function Towing() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
+  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormState('submitting');
+    setTimeout(() => {
+      setFormState('success');
+      setTimeout(() => setFormState('idle'), 5000);
+    }, 1500);
+  };
 
   return (
     <main className="pt-24 lg:pt-[104px]">
@@ -92,41 +103,60 @@ export default function Towing() {
             >
               <div className="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-[1px]" />
               <h3 className="text-2xl font-bold text-dark mb-2">Request a Tow Now</h3>
-              <p className="text-dark/70 text-sm mb-6">Fill out the form below for immediate dispatch.</p>
               
-              <form className="space-y-4" onSubmit={e => e.preventDefault()}>
-                <div className="grid grid-cols-2 gap-4">
-                  <input type="text" placeholder="Your Name" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
-                  <input type="tel" placeholder="Phone Number" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
+              {formState === 'success' ? (
+                <div className="bg-accent/10 border border-accent/20 rounded-[1px] p-6 text-center my-6">
+                  <ShieldCheck className="w-12 h-12 text-accent mx-auto mb-4" />
+                  <h4 className="font-bold text-xl text-dark mb-2">Dispatch Initiated</h4>
+                  <p className="text-dark/70 text-sm">We've received your request. A tow truck is being assigned to your location. For immediate assistance, please call <a href="tel:0244753849" className="font-bold text-accent hover:underline">0244753849</a>.</p>
                 </div>
-                
-                <div className="relative">
-                  <input type="text" placeholder="Current Location" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full pr-12" />
-                  <button type="button" className="absolute right-3 top-1/2 -translate-y-1/2 text-primary p-1 hover:bg-accent/10 rounded-[1px] transition-colors" title="Use My Location">
-                    <MapPin className="w-5 h-5" />
-                  </button>
-                </div>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <input type="text" placeholder="Vehicle Make & Model" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
-                  <select defaultValue="" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark/70 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full appearance-none">
-                    <option value="" disabled>Select Issue...</option>
-                    <option value="breakdown">Breakdown</option>
-                    <option value="accident">Accident</option>
-                    <option value="flat-tire">Flat Tire</option>
-                    <option value="fuel">Out of Fuel</option>
-                    <option value="lockout">Lockout</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                
-                <button className="w-full bg-primary hover:bg-black text-white font-bold py-4 rounded-[1px] transition-all shadow-lg flex items-center justify-center gap-2 mt-2">
-                  <Truck className="w-5 h-5" /> Request Emergency Towing
-                </button>
-              </form>
+              ) : (
+                <>
+                  <p className="text-dark/70 text-sm mb-6">Fill out the form below for immediate dispatch.</p>
+                  
+                  <form className="space-y-4" onSubmit={handleSubmit}>
+                    <div className="grid grid-cols-2 gap-4">
+                      <input required type="text" placeholder="Your Name" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
+                      <input required type="tel" placeholder="Phone Number" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
+                    </div>
+                    
+                    <div className="relative">
+                      <input required type="text" placeholder="Current Location" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full pr-12" />
+                      <button type="button" className="absolute right-3 top-1/2 -translate-y-1/2 text-primary p-1 hover:bg-accent/10 rounded-[1px] transition-colors" title="Use My Location">
+                        <MapPin className="w-5 h-5" />
+                      </button>
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      <input required type="text" placeholder="Vehicle Make & Model" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full" />
+                      <select required defaultValue="" className="bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-dark/70 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent w-full appearance-none">
+                        <option value="" disabled>Select Issue...</option>
+                        <option value="breakdown">Breakdown</option>
+                        <option value="accident">Accident</option>
+                        <option value="flat-tire">Flat Tire</option>
+                        <option value="fuel">Out of Fuel</option>
+                        <option value="lockout">Lockout</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    
+                    <button disabled={formState === 'submitting'} className="w-full bg-primary hover:bg-black text-white font-bold py-4 rounded-[1px] transition-all shadow-lg flex items-center justify-center gap-2 mt-2 disabled:opacity-70">
+                      {formState === 'submitting' ? (
+                        <span className="animate-pulse">Processing...</span>
+                      ) : (
+                        <><Truck className="w-5 h-5" /> Request Emergency Towing</>
+                      )}
+                    </button>
+                  </form>
+                </>
+              )}
             </motion.div>
 
           </div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

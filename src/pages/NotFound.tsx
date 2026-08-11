@@ -87,6 +87,7 @@ export default function NotFound() {
         >
           <form onSubmit={handleSearch} className="relative">
             <input 
+              required
               type="text" 
               placeholder="Search for services, vehicles, or information..."
               value={searchQuery}

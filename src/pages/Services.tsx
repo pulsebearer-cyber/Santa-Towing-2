@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Truck, Shield, Car, Wrench, Settings, Battery, ArrowRight, Clock, ShieldCheck, Tag, MapPin, Zap, Phone } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { Link } from 'react-router-dom';
 import { FAQ } from '@/components/sections/BottomSections';
 
@@ -117,6 +118,10 @@ export default function Services() {
               <span>Call for Repair</span>
             </a>
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 
@@ -286,12 +291,12 @@ export default function Services() {
             Our expert team is ready to guide you. Contact us today and we'll help you find the right solution for your vehicle.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-primary hover:bg-black text-white px-8 py-4 rounded-[1px] font-bold transition-all shadow-xl">
+            <Link to="/contact" className="bg-primary hover:bg-black text-white px-8 py-4 rounded-[1px] font-bold transition-all shadow-xl flex items-center justify-center">
               Contact Us
-            </button>
-            <button className="bg-white hover:bg-dark/5 text-dark px-8 py-4 rounded-[1px] font-bold transition-all shadow-xl">
+            </Link>
+            <a href="tel:0244753849" className="bg-white hover:bg-dark/5 text-dark px-8 py-4 rounded-[1px] font-bold transition-all shadow-xl flex items-center justify-center">
               Call Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

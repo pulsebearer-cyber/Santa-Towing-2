@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Search, Car, Settings, Fuel, ShieldCheck, Tag, CheckCircle2, DollarSign, RefreshCcw, ThumbsUp, CreditCard, ChevronDown, Star, ArrowRight, SlidersHorizontal, MapPin } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 // Local mock data since we need more items for filtering
@@ -147,6 +148,10 @@ export default function Sales() {
               </div>
             </form>
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

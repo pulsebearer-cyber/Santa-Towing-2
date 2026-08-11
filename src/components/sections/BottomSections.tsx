@@ -367,7 +367,7 @@ export function ContactSection() {
                 <div className="bg-accent/20 border border-accent/40 rounded-[1px] p-6 text-center my-6">
                   <CheckCircle2 className="w-10 h-10 text-accent mx-auto mb-2" />
                   <h4 className="font-bold text-lg text-white mb-1">Message Received!</h4>
-                  <p className="text-sm text-white/85">Our dispatch team will contact you shortly. For immediate towing, please call <span className="font-bold text-accent">0244753849</span>.</p>
+                  <p className="text-sm text-white/85">Our dispatch team will contact you shortly. For immediate towing, please call <a href="tel:0244753849" className="font-bold text-accent underline">0244753849</a>.</p>
                 </div>
               ) : (
                 <form className="space-y-4" onSubmit={handleSubmit}>

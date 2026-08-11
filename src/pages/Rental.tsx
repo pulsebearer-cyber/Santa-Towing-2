@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Calendar, MapPin, Car, Search, Users, Settings, Fuel, CheckCircle2, ShieldCheck, Clock, CreditCard, FileText, Map, Baby, UserPlus, Shield, Briefcase, ChevronDown, Star, ArrowRight } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 import { RENTAL_CATEGORIES } from '@/data/mockData';
 
@@ -143,6 +144,10 @@ export default function Rental() {
               </div>
             </form>
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

@@ -5,6 +5,7 @@ import {
   Search, ChevronDown, Phone, MessageCircle, 
   HelpCircle, Wrench, Truck, CarTaxiFront, Car, Settings, CreditCard, Users
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const CATEGORIES = [
@@ -71,7 +72,7 @@ const FAQ_DATA = [
 export default function Faqs() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(null);
+  const [openFaqId, setOpenFaqId] = useState<string | null>(null);
 
   const filteredFaqs = useMemo(() => {
     return FAQ_DATA.filter(faq => {
@@ -137,7 +138,7 @@ export default function Faqs() {
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
-                setOpenFaqIdx(null); // Reset open accordion on search
+                setOpenFaqId(null); // Reset open accordion on search
               }}
               className="flex-1 py-3 px-2 text-dark focus:outline-none bg-transparent"
             />
@@ -150,6 +151,10 @@ export default function Faqs() {
               </button>
             )}
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 
@@ -164,7 +169,7 @@ export default function Faqs() {
                   key={category.id}
                   onClick={() => {
                     setActiveCategory(category.id);
-                    setOpenFaqIdx(null);
+                    setOpenFaqId(null);
                   }}
                   className={cn(
                     "flex items-center gap-2 px-5 py-2.5 rounded-[1px] text-sm font-bold whitespace-nowrap transition-all",
@@ -216,13 +221,12 @@ export default function Faqs() {
                     
                     <div className="space-y-4">
                       {(faqs as typeof FAQ_DATA).map((faq, idx) => {
-                        const globalIdx = groupIdx * 100 + idx; // Unique ID for tracking open state
-                        const isOpen = openFaqIdx === globalIdx;
+                        const isOpen = openFaqId === faq.q;
                         
                         return (
                           <div key={idx} className="border border-dark/20 rounded-[1px] overflow-hidden shadow-sm bg-white hover:border-accent/30 transition-colors">
                             <button 
-                              onClick={() => setOpenFaqIdx(isOpen ? null : globalIdx)}
+                              onClick={() => setOpenFaqId(isOpen ? null : faq.q)}
                               className="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-dark/5 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
                               aria-expanded={isOpen}
                             >
@@ -255,12 +259,12 @@ export default function Faqs() {
             // Flat List View (when filtered by category or searched)
             <div className="space-y-4">
               {filteredFaqs.map((faq, idx) => {
-                const isOpen = openFaqIdx === idx;
+                const isOpen = openFaqId === faq.q;
                 
                 return (
                   <div key={idx} className="border border-dark/20 rounded-[1px] overflow-hidden shadow-sm bg-white hover:border-accent/30 transition-colors">
                     <button 
-                      onClick={() => setOpenFaqIdx(isOpen ? null : idx)}
+                      onClick={() => setOpenFaqId(isOpen ? null : faq.q)}
                       className="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-dark/5 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent"
                       aria-expanded={isOpen}
                     >

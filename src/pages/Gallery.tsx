@@ -5,6 +5,7 @@ import {
   X, ChevronLeft, ChevronRight, Play, Camera, 
   MapPin, CheckCircle2, Phone, ArrowRight, Instagram
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const CATEGORIES = [
@@ -119,6 +120,10 @@ export default function Gallery() {
           >
             A visual look at our towing fleet, workshop facilities, vehicle inventory, and completed repairs. Quality you can see.
           </motion.p>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

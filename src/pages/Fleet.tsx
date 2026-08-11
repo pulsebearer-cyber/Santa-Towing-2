@@ -6,6 +6,7 @@ import {
   Settings, Truck, MapPin, BarChart3, Building2, 
   Users, HardHat, CarTaxiFront, Plane, ChevronDown
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const FLEET_SERVICES = [
@@ -110,6 +111,10 @@ export default function Fleet() {
               </button>
             </motion.div>
           </div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

@@ -7,6 +7,7 @@ import {
   ArrowRight, Package, Wrench, Zap, Droplet, Circle, CircleDot, 
   Lightbulb, Tag
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const CATEGORIES = [
@@ -118,6 +119,10 @@ export default function Parts() {
               Get a Quote
             </button>
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

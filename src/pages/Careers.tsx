@@ -5,6 +5,7 @@ import {
   Briefcase, GraduationCap, Wrench, Users, ShieldCheck, Award, 
   MapPin, Clock, ChevronRight, CheckCircle2, Search, ArrowRight, X, Paperclip, Send
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const PERKS = [
@@ -193,6 +194,10 @@ export default function Careers() {
               </a>
             </motion.div>
           </div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

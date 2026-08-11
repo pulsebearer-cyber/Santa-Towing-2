@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white/70 pt-16 sm:pt-20 pb-10 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-14">
           
           {/* Brand */}
           <div className="space-y-6">
@@ -117,6 +117,36 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Legal and Policies */}
+          <div>
+            <h4 className="text-white text-base sm:text-lg font-bold mb-5 relative inline-block">
+              Legal and Policies
+              <span className="absolute -bottom-1.5 left-0 w-8 h-0.5 bg-accent rounded-[1px]" />
+            </h4>
+            <ul className="space-y-2.5 text-sm">
+              {[
+                { name: 'Privacy Policy', path: '/privacy-policy' },
+                { name: 'Terms & Conditions', path: '#' },
+                { name: 'Towing Service Terms', path: '#' },
+                { name: 'Cancellation & Refund Policy', path: '#' },
+                { name: 'Pricing & Payment Policy', path: '#' },
+                { name: 'Disclaimer', path: '#' },
+                { name: 'Cookie Policy', path: '#' },
+                { name: 'Service Area Policy', path: '#' },
+                { name: 'Emergency Service Policy', path: '#' },
+                { name: 'Complaints Policy', path: '#' },
+                { name: 'Vehicle Damage & Liability Policy', path: '#' }
+              ].map(item => (
+                <li key={item.name}>
+                  <Link to={item.path} className="hover:text-accent transition-colors flex items-center gap-2 text-white/80 hover:translate-x-1 duration-200">
+                    <ArrowRight className="w-3 h-3 text-accent" />
+                    <span>{item.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Newsletter & Socials */}
           <div>
             <h4 className="text-white text-base sm:text-lg font-bold mb-5 relative inline-block">
@@ -126,8 +156,9 @@ export default function Footer() {
             <p className="text-white/70 text-sm mb-4 leading-relaxed">
               Subscribe for roadside safety tips, car maintenance reminders, and exclusive service discounts.
             </p>
-            <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); (e.target as HTMLFormElement).reset(); alert('Subscribed successfully!'); }}>
               <input 
+                required
                 type="email" 
                 placeholder="Enter your email" 
                 className="w-full bg-white/10 border border-white/15 rounded-[1px] px-4 py-3 text-white text-sm placeholder-white/50 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"

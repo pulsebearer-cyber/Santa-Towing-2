@@ -6,6 +6,7 @@ import {
   Truck, Wrench, ShieldCheck, ChevronRight, ChevronLeft, 
   CalendarPlus, Settings, CarTaxiFront, MessageCircle, Info, ChevronDown
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 type ServiceType = 'Emergency Towing' | 'Auto Repairs' | 'Body Works' | 'Car Rental' | 'Vehicle Sales' | 'Fleet Services';
@@ -145,6 +146,10 @@ export default function Booking() {
           >
             Fast, simple booking for towing, repairs, rentals, and more. Let us know what you need.
           </motion.p>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

@@ -6,6 +6,7 @@ import {
   Sparkles, Wrench, Clock, ArrowRight, ChevronDown, Star,
   MoveRight, Zap, Hexagon, Circle, Shield
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const BODY_SERVICES = [
@@ -125,6 +126,10 @@ export default function BodyWorks() {
               View Gallery
             </button>
           </motion.div>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 

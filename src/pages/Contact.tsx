@@ -4,6 +4,7 @@ import {
   Phone, Mail, MapPin, MessageCircle, Clock, 
   Car, Wrench, ShieldCheck, ChevronDown, Send, CheckCircle2
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const CONTACT_OPTIONS = [
@@ -83,6 +84,10 @@ export default function Contact() {
           >
             Reach out for towing, repairs, rentals, vehicle sales, or general enquiries. Our dedicated team is ready to assist you.
           </motion.p>
+        </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
         </div>
       </section>
 
@@ -242,7 +247,7 @@ export default function Contact() {
                 <h4 className="font-bold text-accent mb-2 text-sm flex items-center gap-2">
                   <Phone className="w-4 h-4" /> 24/7 Emergency Hotline
                 </h4>
-                <p className="text-xl font-bold">0244753849</p>
+                <a href="tel:0244753849" className="text-xl font-bold hover:text-accent transition-colors">0244753849</a>
               </div>
             </div>
 

@@ -159,7 +159,7 @@ export default function BlogPost() {
             <div className="flex flex-wrap items-center gap-2 mb-12 border-b border-dark/20 pb-8">
               <span className="text-sm font-bold text-dark mr-2">Tags:</span>
               {ARTICLE.tags.map((tag, idx) => (
-                <Link key={idx} to="#" className="bg-white border border-dark/20 text-dark/70 px-3 py-1 rounded-[1px] text-xs hover:border-accent hover:text-accent transition-colors">
+                <Link key={idx} to="/blog" className="bg-white border border-dark/20 text-dark/70 px-3 py-1 rounded-[1px] text-xs hover:border-accent hover:text-accent transition-colors">
                   {tag}
                 </Link>
               ))}
@@ -211,12 +211,12 @@ export default function BlogPost() {
 
               <div className="bg-white p-6 md:p-8 rounded-[1px] border border-dark/10 shadow-sm">
                 <h4 className="font-bold text-dark mb-4">Leave a Reply</h4>
-                <form className="space-y-4">
+                <form className="space-y-4" onSubmit={e => { e.preventDefault(); (e.target as HTMLFormElement).reset(); alert('Comment posted successfully!'); }}>
                   <div className="grid md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Name" className="w-full bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent" />
-                    <input type="email" placeholder="Email" className="w-full bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent" />
+                    <input required type="text" placeholder="Name" className="w-full bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent" />
+                    <input required type="email" placeholder="Email" className="w-full bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent" />
                   </div>
-                  <textarea placeholder="Your comment" rows={4} className="w-full bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"></textarea>
+                  <textarea required placeholder="Your comment" rows={4} className="w-full bg-white border border-dark/20 rounded-[1px] px-4 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"></textarea>
                   <button className="bg-primary hover:bg-black text-white font-bold py-3 px-8 rounded-[1px] transition-all shadow-md">
                     Post Comment
                   </button>
@@ -259,7 +259,7 @@ export default function BlogPost() {
               </div>
               <h3 className="text-xl font-bold mb-2">Never Miss an Update</h3>
               <p className="text-white/80 text-sm mb-6">Get our latest maintenance guides and tips directly in your inbox.</p>
-              <form className="space-y-3" onSubmit={e => e.preventDefault()}>
+              <form className="space-y-3" onSubmit={e => { e.preventDefault(); (e.target as HTMLFormElement).reset(); alert('Subscribed successfully!'); }}>
                 <input 
                   type="email" 
                   placeholder="Your email address" 

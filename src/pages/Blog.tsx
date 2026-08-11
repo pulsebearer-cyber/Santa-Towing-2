@@ -5,6 +5,7 @@ import {
   Search, Calendar, Clock, User, ArrowRight, ChevronRight,
   Mail
 } from 'lucide-react';
+import ScrollToFooterArrow from '@/components/ui/ScrollToFooterArrow';
 import { cn } from '@/lib/utils';
 
 const CATEGORIES = [
@@ -154,6 +155,10 @@ export default function Blog() {
             </button>
           </motion.div>
         </div>
+      
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+          <ScrollToFooterArrow />
+        </div>
       </section>
 
       {/* 2. Category Filter Bar */}
@@ -299,7 +304,7 @@ export default function Blog() {
               </div>
               <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
               <p className="text-dark/70 text-sm mb-6">Get the latest automotive tips and exclusive offers directly in your inbox.</p>
-              <form className="space-y-3" onSubmit={e => e.preventDefault()}>
+              <form className="space-y-3" onSubmit={e => { e.preventDefault(); (e.target as HTMLFormElement).reset(); alert('Subscribed successfully!'); }}>
                 <input 
                   type="email" 
                   placeholder="Your email address" 
@@ -354,7 +359,7 @@ export default function Blog() {
                 {TAGS.map((tag, idx) => (
                   <Link 
                     key={idx} 
-                    to="#" 
+                    to="/blog" 
                     className="bg-white hover:bg-dark/5 text-dark/70 text-xs font-bold px-3 py-1.5 rounded-[1px] transition-colors"
                   >
                     {tag}
@@ -374,7 +379,7 @@ export default function Blog() {
         <div className="max-w-2xl mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Automotive Tips in Your Inbox</h2>
           <p className="text-dark/70 mb-8">Join thousands of drivers who receive our expert maintenance advice and exclusive offers every month.</p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onSubmit={e => e.preventDefault()}>
+          <form className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onSubmit={e => { e.preventDefault(); (e.target as HTMLFormElement).reset(); alert('Subscribed successfully!'); }}>
             <input 
               type="email" 
               placeholder="Enter your email address" 
